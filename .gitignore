@@ -1,0 +1,11 @@
+#Arquivos de compilação
+*.o
+*.a
+*.so
+
+#Executaveis
+*.out
+a.out
+
+#Temporarios
+*.swp
