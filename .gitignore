@@ -3,6 +3,9 @@
 *.a
 *.so
 
+#Testes
+main_test.c
+
 #Executaveis
 *.out
 a.out
