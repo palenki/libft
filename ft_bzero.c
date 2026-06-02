@@ -6,15 +6,15 @@
 /*   By: pauhenr2 <pauhenr2@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 08:32:17 by pauhenr2          #+#    #+#             */
-/*   Updated: 2026/05/27 09:02:18 by pauhenr2         ###   ########.fr       */
+/*   Updated: 2026/06/02 15:15:48 by pauhenr2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s,size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	unsigned char *arr;
+	unsigned char	*arr;
 
 	arr = s;
 	while (n > 0)
