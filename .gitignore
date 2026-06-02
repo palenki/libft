@@ -9,6 +9,7 @@ main_test.c
 #Executaveis
 *.out
 a.out
+test_runner
 
 #Temporarios
 *.swp
