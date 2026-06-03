@@ -6,7 +6,7 @@
 /*   By: pauhenr2 <pauhenr2@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 13:45:08 by pauhenr2          #+#    #+#             */
-/*   Updated: 2026/05/26 13:46:08 by pauhenr2         ###   ########.fr       */
+/*   Updated: 2026/06/03 13:01:31 by pauhenr2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ size_t	ft_strlen(const char *str)
 {
 	size_t	i;
 
-	i = 1;
+	i = 0;
 	while (str[i])
 		i++;
 	return (i);
