@@ -6,7 +6,7 @@
 /*   By: pauhenr2 <pauhenr2@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:36:26 by pauhenr2          #+#    #+#             */
-/*   Updated: 2026/06/06 14:37:57 by pauhenr2         ###   ########.fr       */
+/*   Updated: 2026/06/06 17:33:32 by pauhenr2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,28 +16,48 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-size_t	ft_isalpha(int c);
+//        1. CHARACTER CLASSIFICATION & MANIPULATION (IS* & TO*)           
+/*____________________________________________________________________________*/
+
+int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
-size_t	ft_strlen(const char *str);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
+
+//                      2. RAW MEMORY MANAGEMENT (MEM*)                       
+/*____________________________________________________________________________*/
+
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+
+//                       3. STRING MANIPULATION (STR*)                        
+/*____________________________________________________________________________*/
+
+size_t	ft_strlen(const char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
-int		ft_toupper(int c);
-int		ft_tolower(int c);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-void	*ft_memchr(const void *s, int c, size_t n);
-int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
-int		ft_atoi(const char *nptr);
-void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *str);
+char	*ft_substr(const char *s, unsigned int start, size_t len);
+
+//								4. DATA CONVERSION          				  
+/*____________________________________________________________________________*/
+
+int		ft_atoi(const char *nptr);
+
+//                 5. DYNAMIC MEMORY ALLOCATION (HEAP MANAGEMENT)	          
+/*____________________________________________________________________________*/
+
+void	*ft_calloc(size_t nmemb, size_t size);
 
 #endif
