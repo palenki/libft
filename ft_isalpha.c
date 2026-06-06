@@ -6,13 +6,13 @@
 /*   By: pauhenr2 <pauhenr2@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 11:12:00 by pauhenr2          #+#    #+#             */
-/*   Updated: 2026/05/26 08:52:08 by pauhenr2         ###   ########.fr       */
+/*   Updated: 2026/06/06 17:33:08 by pauhenr2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
 	if ((c > 64 && c < 91) || (c > 96 && c < 123))
 		return (1);
