@@ -6,7 +6,7 @@
 /*   By: pauhenr2 <pauhenr2@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:36:26 by pauhenr2          #+#    #+#             */
-/*   Updated: 2026/06/08 16:39:18 by pauhenr2         ###   ########.fr       */
+/*   Updated: 2026/06/08 16:59:08 by pauhenr2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ char	*ft_strjoin(const char *s1, const char *s2);
 char	*ft_strtrim(const char *s1, const char *set);
 char	**ft_split(const char *s1, char c);
 char	*ft_strmapi(const char *s, char (*f) (unsigned int, char));
+void	ft_striteri(char *s, void (*f) (unsigned int, char*));
 
 //								4. DATA CONVERSION          				  
 /*____________________________________________________________________________*/
