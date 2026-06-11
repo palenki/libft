@@ -6,7 +6,7 @@
 /*   By: pauhenr2 <pauhenr2@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 10:36:26 by pauhenr2          #+#    #+#             */
-/*   Updated: 2026/06/10 18:00:10 by pauhenr2         ###   ########.fr       */
+/*   Updated: 2026/06/10 18:53:33 by pauhenr2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,5 +90,7 @@ t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
+void	ft_lstiter(t_list *lst, void (*f)(void*));
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void*));
 
 #endif
