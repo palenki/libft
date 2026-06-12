@@ -6,7 +6,7 @@
 /*   By: pauhenr2 <pauhenr2@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/06 16:06:33 by pauhenr2          #+#    #+#             */
-/*   Updated: 2026/06/06 17:16:18 by pauhenr2         ###   ########.fr       */
+/*   Updated: 2026/06/12 20:49:03 by pauhenr2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size = ft_strlen(s);
 	if (start >= size)
 	{
-		str = calloc(1, 1);
+		str = ft_calloc(1, 1);
 		return (str);
 	}
 	if ((size - start) < len)
